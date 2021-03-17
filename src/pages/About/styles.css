@@ -1,0 +1,16 @@
+/*style of the image in the about-me section*/
+.about-image{
+    height:150px;
+    width:150px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+#seperator-line {
+    border-color: rgb(38, 194, 59);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.container {
+    color:rgb(38, 194, 59) ;
+}
