@@ -14,10 +14,11 @@ function App() {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route path="/ReactPortfolio" exact component={() => <About />} />
-          <Route path="/" exact component={() => <About />} />
+          <Route path="/ReactPortfolio" exact component={() => <Portfolio />} />
+          <Route path="/" exact component={() => <Portfolio />} />
           <Route path="/Contact" exact component={() => <Contact />} />
           <Route path="/Portfolio" exact component={() => <Portfolio projects={projects}/>} />
+          <Route path="/About" exact component={() => <About projects={projects}/>} />
         </Switch>
         <Footer/>
       </BrowserRouter>
