@@ -4,6 +4,7 @@ import Header from './components/Header/Header';
 import About from './pages/About/About'
 import Contact from './pages/Contact/Contact';
 import Portfolio from './pages/Portfolio/Portfolio';
+import projects from './Data/projects';
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
           <Route path="/ReactPortfolio" exact component={() => <About />} />
           <Route path="/" exact component={() => <About />} />
           <Route path="/Contact" exact component={() => <Contact />} />
-          <Route path="/Portfolio" exact component={() => <Portfolio/>} />
+          <Route path="/Portfolio" exact component={() => <Portfolio projects={projects}/>} />
         </Switch>
       </BrowserRouter>
     </div>
