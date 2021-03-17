@@ -5,6 +5,7 @@ import About from './pages/About/About'
 import Contact from './pages/Contact/Contact';
 import Portfolio from './pages/Portfolio/Portfolio';
 import projects from './Data/projects';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/Contact" exact component={() => <Contact />} />
           <Route path="/Portfolio" exact component={() => <Portfolio projects={projects}/>} />
         </Switch>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
