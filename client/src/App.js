@@ -14,13 +14,13 @@ function App() {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route path="/ReactPortfolio" exact component={() => <Portfolio />} />
-          <Route path="/" exact component={() => <Portfolio />} />
+          <Route path="/ReactPortfolio" exact component={() => <Portfolio projects={projects} />} />
+          <Route path="/" exact component={() => <Portfolio projects={projects} />} />
           <Route path="/Contact" exact component={() => <Contact />} />
-          <Route path="/Portfolio" exact component={() => <Portfolio projects={projects}/>} />
-          <Route path="/About" exact component={() => <About projects={projects}/>} />
+          <Route path="/Portfolio" exact component={() => <Portfolio projects={projects} />} />
+          <Route path="/About" exact component={() => <About projects={projects} />} />
         </Switch>
-        <Footer/>
+        <Footer />
       </BrowserRouter>
     </div>
   );
