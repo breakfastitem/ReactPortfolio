@@ -1,27 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./styles.css"
 
-function Header(){
-    return(
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="./">Andrew Ehrman</a>
-        
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              
-                <span class="navbar-toggler-icon"></span>
+function Header() {
+
+    const [open, setOpen] = useState(false);
+
+    return (
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a className="navbar-brand" href="./">Andrew Ehrman</a>
+
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded={open} aria-label="Toggle navigation"
+                onClick={() => setOpen(!open)}>
+
+                <span className="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-    
-                    <li class="nav-item">
-                        <a class="nav-link" href="./Contact">Contact</a>
+            <div className="collapse navbar-collapse" id="navbarNav">
+                <ul className="navbar-nav ml-auto">
+
+                    <li className="nav-item">
+                        <a className="nav-link" href="./Contact">Contact</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./">Portfolio</a>
+                    <li className="nav-item">
+                        <a className="nav-link" href="./">Portfolio</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./About">About</a>
+                    <li className="nav-item">
+                        <a className="nav-link" href="./About">About</a>
                     </li>
                 </ul>
             </div>

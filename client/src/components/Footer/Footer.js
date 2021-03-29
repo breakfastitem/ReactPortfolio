@@ -5,8 +5,8 @@ function Footer() {
     return (
         <footer>
 
-            <div class="footer-buffer"></div>
-            <div class="footer-text">
+            <div className="footer-buffer"></div>
+            <div className="footer-text">
                 <h2>andrew.ehrman@gmail.com</h2>
             </div>
         </footer>);

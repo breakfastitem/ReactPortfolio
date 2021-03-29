@@ -3,10 +3,10 @@ import "./styles.css"
 
 function Contact() {
     return (
-        <div class="container">
-            <section class="infoBox">
-                <div class="row infoBox-row">
-                    <div class="col-12">
+        <div className="container">
+            <section className="infoBox">
+                <div className="row infoBox-row">
+                    <div className="col-12">
                         <h1>Contact</h1>
                         <hr id="seperator-line" />
 

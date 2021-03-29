@@ -15,17 +15,17 @@ function Portfolio({ projects }) {
         />);
     });
 
-    return (<div class="container">
-        <section class="infoBox">
-            <div class="row infoBox-row">
-                <div class="col-12">
+    return (<div className="container">
+        <section className="infoBox">
+            <div className="row infoBox-row">
+                <div className="col-12">
                     <h2>Portfolio</h2>
                     <hr />
                 </div>
             </div>
 
-            <div class="row infoBox-row">
-                <div class="col-12">
+            <div className="row infoBox-row">
+                <div className="col-12">
                     {projectsJSX}
                 </div>
             </div>

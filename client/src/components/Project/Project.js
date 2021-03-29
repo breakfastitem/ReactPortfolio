@@ -3,12 +3,12 @@ import "./styles.css"
 
 function Project(props) {
     return (
-        <div class="portfolio-image">
-            <div class="row">
-                <div class="col-lg-4">
+        <div className="portfolio-image">
+            <div className="row">
+                <div className="col-lg-4">
                     <img src={process.env.PUBLIC_URL + props.imgSrc } alt={props.imgAlt} />
                 </div>
-                <div class="col-lg-7">
+                <div className="col-lg-7">
                     <h3>Description</h3>
                     <p>{props.description}</p>
 
